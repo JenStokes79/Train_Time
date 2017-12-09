@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Time</title>
+</head>
+<!--links CSS reset-->
+<link rel="stylesheet" type="text/css" href="assets/reset.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!--Links style.css-->
+<link rel="stylesheet" type="text/css" href="assets/style.css">
+<!--links jQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--Links Firebase-->
+<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+
+<body>
+
+<div class="container">
+<div class="jumbotron">
+  <h1>Train Time</h1>
+  <p>All Aboard! Never miss your train agian. Check the train times below!</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Panel heading</div>
+
+  <!-- Table -->
+  <table class="table">
+     <thead>
+                  <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency (Min)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                  </tr>
+                </thead>
+  </table>
+</div>
+
+  <!-- Add Employee  -->
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title"><strong>Add New Train Info</strong></h3>
+            </div>
+            <div class="panel-body">
+
+	
+	<!-- Entry Form -->
+              <form>
+                <div class="form-group">
+                  <label for="train-name-input">Train Name</label>
+                  <input class="form-control" id="trainName" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="destination-input">Destination</label>
+                  <input class="form-control" id="destination" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="firstTime-input">First Train Time (00:00 24hr)</label>
+                  <input class="form-control" id="firstTrain" type="text">
+                </div>
+                 <div class="form-group">
+                  <label for="frequency-input">Frequency (Min)</label>
+                  <input class="form-control" id="frequency" type="text">
+                </div>
+                <button class="btn btn-primary" id="add-employee-btn" type="submit">Submit</button>
+              </form>
+
+
+
+</div>
+
+
+
+<!--Links Javscript-->
+<script type="text/javascript" src="assets/app.js"></script>
+</body>
+</html>
