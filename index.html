@@ -11,6 +11,9 @@
 <link rel="stylesheet" type="text/css" href="assets/style.css">
 <!--links jQuery-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!--Links Moment -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.3/moment.min.js"></script>
 <!--Links Firebase-->
 <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
 
@@ -20,15 +23,15 @@
 <div class="jumbotron">
   <h1>Train Time</h1>
   <p>All Aboard! Never miss your train agian. Check the train times below!</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+  
 </div>
 
-<div class="panel panel-default">
+<div class="panel panel-primary">
   <!-- Default panel contents -->
-  <div class="panel-heading">Panel heading</div>
+  <div class="panel-heading">Upcoming Trains</div>
 
   <!-- Table -->
-  <table class="table">
+  <table class="table" id="train-table">
      <thead>
                   <tr>
                     <th>Train Name</th>
@@ -38,10 +41,13 @@
                     <th>Minutes Away</th>
                   </tr>
                 </thead>
+                <tbody>
+                  
+                </tbody>
   </table>
 </div>
 
-  <!-- Add Employee  -->
+  <!-- Add Train Form  -->
           <div class="panel panel-primary">
             <div class="panel-heading">
               <h3 class="panel-title"><strong>Add New Train Info</strong></h3>
@@ -67,7 +73,7 @@
                   <label for="frequency-input">Frequency (Min)</label>
                   <input class="form-control" id="frequency" type="text">
                 </div>
-                <button class="btn btn-primary" id="add-employee-btn" type="submit">Submit</button>
+                <button class="btn btn-primary" id="trainSubmit" type="submit">Submit</button>
               </form>
 
 
